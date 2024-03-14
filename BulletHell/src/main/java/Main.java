@@ -52,7 +52,7 @@ public class Main extends Application{
 	private boolean gameOver;
 	
 	@Override
-	public void start(Stage stage){
+	public void start(Stage stage) throws URISyntaxException {
 		initialize(stage);
 		createGameInputs();
 		createGameLoop();
@@ -237,7 +237,7 @@ public class Main extends Application{
 		try {
 			hellTitle = new ImageView(new Image(getClass().getResource("images/hellTitle.png").toURI().toString()));
 			girlTitle = new ImageView(new Image(getClass().getResource("images/girlTitle.png").toURI().toString()));
-			startTitle = new ImageView(new Image(getClass().getResource("images/startGlow.png").toURI().toString())); 
+			startTitle = new ImageView(new Image(getClass().getResource("images/startGlow.png").toURI().toString()));
 			gameOverTitle = new ImageView(new Image(getClass().getResource("images/gameOver.png").toURI().toString()));
 			topScoresTitle = new ImageView(new Image(getClass().getResource("images/topScores.png").toURI().toString()));
 			topScoresTitle.setOpacity(0);
